@@ -48,6 +48,13 @@ document.getElementById('expenses-btn').addEventListener('click',InsertExpenses)
 function InsertBalance(){
     balance = Number(sessionStorage.getItem('auxiliar')) - Number(globalSum);
     document.getElementById('balance-dato').innerText = balance;
+    sessionStorage.setItem('balance',balance);
+    sessionStorage.getItem('balance');
+    if (balance<0){
+        document.getElementById('balance-dato').style.color='red';
+    }else { 
+        document.getElementById('balance-dato').style.color='green';
+    }
 }
 document.getElementById('expenses-btn').addEventListener('click',InsertBalance);
 
