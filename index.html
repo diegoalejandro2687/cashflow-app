@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashFlow App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-bar">
+        <div class="logo">
+            <img src="img/CashFlow-app-logo.png" alt="CashFlow-app-logo">
+        </div>
+        <div class="social-media">
+            <img src="img/twitter-icon.png" alt="twiiter-icon">
+            <img src="img/facebook-icon.png" alt="facebook-icon">
+            <img src="img/linkedIn-icon.png" alt="linkedIn-icon">
+            <img src="img/instagram-icon.png" alt="instagram-icon">
+        </div>
+    </header>
+    <main>
+        <section class="container-left">
+            <div class="presupuesto-box">
+                <p>Ingrese su presupuesto:</p>
+                <input id="budget" class="presupuesto" type="number">
+                <button id="btn-calcular" class="color-btn">Calcular</button>
+            </div>
+            <div class="ingrese-box">
+                <p>Ingrese el nombre de su gasto:</p>
+                <input id="expenses-name" type="text">
+                <p>Ingrese el monto de su gasto:</p>
+                <input id="expenses-value" type="number">
+                <button id="expenses-btn" class="color-btn">Agregar gasto</button>
+            </div>
+        </section>
+        <section class="container-right">
+            <div class="datos-box">
+                <div class="container-img">
+                    <img class="img1" src="img/presupuesto-icon.png" alt="presupuesto-icon">
+                    <p id="budget-dato" class="size-datos">$0</p>
+                </div>
+                <div class="container-img">
+                    <img class="img2" src="img/gastos-icon.png" alt="gastos-icon">
+                    <p id="expenses-dato" class="size-datos">$0</p>
+                </div>
+                <div class="container-img">
+                    <img class="img3" src="img/balance-icon.png" alt="balabnce-icon">
+                    <p id="balance-dato" class="size-datos">$0</p>
+                </div>
+            </div>
+            <div class="lista-gastos">
+                <div class="titulos">
+                    <p id="titulo-lista">Lista de gastos</p>
+                    <!-- <p>Valor gasto</p> -->
+                </div>
+                <div class="lista-objetos">
+                    <ol id="lista"></ol>
+                </div>
+            </div>
+<input id="auxiliar" type="number" style="display:none;">
+            
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados - Diego Maya & Vanessa Giraldo - 2020</p>
+    </footer>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
